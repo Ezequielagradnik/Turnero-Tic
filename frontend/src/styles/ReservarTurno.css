@@ -1,0 +1,66 @@
+/* ReservarTurno.css */
+
+.reservar-turno-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Centra el formulario en toda la pantalla */
+    background-color: #f9f9f9;
+  }
+  
+  .reservar-turno-card {
+    background-color: white; /* Fondo del marco */
+    border-radius: 12px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+    padding: 2rem;
+    max-width: 400px;
+    width: 100%; /* Adaptativo */
+    text-align: center;
+    animation: fadeIn 0.5s ease-in-out; /* Aplicación de la animación */
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px); /* Inicia ligeramente desplazado hacia arriba */
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0); /* Termina en su posición original */
+    }
+  }
+  
+  .reservar-turno-title {
+    font-size: 2rem;
+    color: #007bff;
+    margin-bottom: 1.5rem;
+  }
+  
+  .reservar-turno-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .reservar-turno-form input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+  
+  .reservar-turno-form .reservar-button {
+    background-color: #28a745;
+    color: white;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .reservar-turno-form .reservar-button:hover {
+    background-color: #218838;
+  }
+  

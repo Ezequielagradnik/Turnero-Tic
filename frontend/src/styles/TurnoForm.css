@@ -1,0 +1,29 @@
+/* TurnoForm.css */
+.turno-form {
+    margin-top: 2rem;
+    padding: 1rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .turno-form input {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .turno-form button {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .turno-form button:hover {
+    background-color: #218838;
+  }
+  

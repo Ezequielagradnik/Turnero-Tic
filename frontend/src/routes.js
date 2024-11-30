@@ -1,16 +1,16 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
-import DocenteDetail from "./pages/DocenteDetail";
+import DocenteList from "./pages/DocenteList";
+import ReservarTurno from "./pages/ReservarTurno";
 
 const AppRoutes = () => {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/docentes/:id" element={<DocenteDetail />} />
-      </Routes>
-    </Router>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/docentes" element={<DocenteList />} />
+      <Route path="/turnos" element={<ReservarTurno />} />
+    </Routes>
   );
 };
 

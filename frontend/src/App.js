@@ -1,12 +1,12 @@
 import React from "react";
+import AppRoutes from "./routes";
+import NavBar from "./components/NavBar";
 
 function App() {
   return (
     <div className="App">
-      <header>
-        <h1>Bienvenido al Turnero</h1>
-        <p>Comienza reservando un turno o viendo los docentes disponibles.</p>
-      </header>
+      <NavBar />
+      <AppRoutes />
     </div>
   );
 }

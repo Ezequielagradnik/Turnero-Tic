@@ -1,0 +1,44 @@
+/* DocenteList.css */
+.docente-list-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+  }
+  
+  .docente-card {
+    background: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .docente-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .docente-card h3 {
+    margin: 0;
+    color: #333;
+  }
+  
+  .docente-card p {
+    margin: 0.5rem 0;
+    color: #666;
+  }
+  
+  .docente-link {
+    display: inline-block;
+    margin-top: 1rem;
+    background-color: #007bff;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+  }
+  
+  .docente-link:hover {
+    background-color: #0056b3;
+  }
+  

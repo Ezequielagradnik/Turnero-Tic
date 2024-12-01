@@ -1,71 +1,127 @@
-/* Home.css */
-
 .home-container {
+    margin-left: 220px;
+    padding: 2rem;
+    color: white;
+    background-color: #001f3f;
+    min-height: 100vh;
+  }
+  
+  .home-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .home-subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #ff0077;
+  }
+  
+  .turnos-wrapper {
+    background-color: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    overflow-y: auto;
+    max-height: 400px;
+    margin-bottom: 2rem;
+  }
+  
+  .turnos-container {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding-bottom: 1rem;
+  }
+  
+  .turno-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  
+  .turno-header {
+    background-color: #001f3f;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 0.5rem;
+  }
+  
+  .turno-body {
+    text-align: center;
+    color: black;
+    padding: 1rem;
+  }
+  
+  .turno-numero {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ff0077;
+    margin-bottom: 0.5rem;
+  }
+  
+  .turno-card.vacio {
+    background-color: transparent;
+    border: 2px dashed #001f3f;
+    color: #001f3f;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    text-align: center;
-    padding: 2rem;
   }
   
-  .home-header {
-    background-color: #007bff;
+  .nuevo-turno-button {
+    background-color: #ff0077;
     color: white;
-    padding: 2rem;
-    border-radius: 8px;
-    margin-bottom: 2rem;
-    width: 100%;
-    max-width: 800px;
-  }
-  
-  .home-header h1 {
-    font-size: 2.5rem;
-    margin: 0;
-  }
-  
-  .home-header p {
-    font-size: 1.2rem;
-    margin-top: 1rem;
-  }
-  
-  .home-buttons {
-    display: flex;
-    gap: 1rem;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-  
-  .home-button {
-    padding: 1rem 2rem;
     border: none;
-    border-radius: 8px;
-    font-size: 1.2rem;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
     font-weight: bold;
     cursor: pointer;
-    transition: transform 0.2s ease, background-color 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0px 4px 10px rgba(255, 0, 119, 0.5);
   }
   
-  .home-button:hover {
-    transform: translateY(-3px);
+  .nuevo-turno-button:hover {
+    background-color: #e6006e;
+    transform: scale(1.1);
   }
   
-  .blue-button {
-    background-color: #007bff;
+  .nuevo-turno-text {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
     color: white;
+    text-align: center;
   }
   
-  .blue-button:hover {
-    background-color: #0056b3;
-  }
-  
-  .green-button {
-    background-color: #007bff;
+  .reservar-turno-button {
+    background-color: #ff0077;
     color: white;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 8px;
+    margin-top: 1rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
   }
   
-  .green-button:hover {
-    background-color: #0056b3;
+  .reservar-turno-button:hover {
+    background-color: #e6006e;
   }
-  
   

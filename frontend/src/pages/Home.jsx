@@ -5,20 +5,39 @@ import "../styles/Home.css";
 const Home = () => {
   const navigate = useNavigate();
 
+  const turnos = [
+    { id: 1, docente: "Chona Pardo", fecha: "Lunes 2/12", bloque: "1° Bloque", numero: 3 },
+    { id: 2, docente: "Nacho Vigilante", fecha: "Jueves 5/12", bloque: "3° Bloque", numero: 15 },
+  ];
+
   return (
     <div className="home-container">
-      <header className="home-header">
-        <h1>Bienvenido al Turnero</h1>
-        <p>Comienza reservando un turno o viendo los docentes disponibles.</p>
-      </header>
-      <div className="home-buttons">
-        <button className="home-button blue-button" onClick={() => navigate("/docentes")}>
-          Ver Docentes
-        </button>
-        <button className="home-button green-button" onClick={() => navigate("/turnos")}>
-          Reservar Turno
-        </button>
+      <h1 className="home-title">Inicio</h1>
+      <h2 className="home-subtitle">Mis Turnos</h2>
+      <div className="turnos-wrapper">
+        <div className="turnos-container">
+          {turnos.map((turno) => (
+            <div key={turno.id} className="turno-card">
+              <div className="turno-header">{turno.docente}</div>
+              <div className="turno-body">
+                <h2 className="turno-numero">{turno.numero}</h2>
+                <p>{turno.fecha}</p>
+                <p>{turno.bloque}</p>
+              </div>
+            </div>
+          ))}
+          <div className="turno-card vacio">
+            <p>Vacío</p>
+            <button onClick={() => navigate("/turnos")} className="nuevo-turno-button">
+              +
+            </button>
+          </div>
+        </div>
       </div>
+      <h2 className="nuevo-turno-text">Nuevo turno</h2>
+      <button className="reservar-turno-button" onClick={() => navigate("/turnos")}>
+        Reservar turno
+      </button>
     </div>
   );
 };

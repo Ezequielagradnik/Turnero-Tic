@@ -123,5 +123,7 @@
   
   .reservar-turno-button:hover {
     background-color: #e6006e;
+    transform: scale(1.1);
+
   }
   

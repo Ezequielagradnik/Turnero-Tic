@@ -12,7 +12,7 @@ const TurnoForm = ({ docenteId }) => {
       alumno_nombre: alumnoNombre,
       docente_id: docenteId,
       bloque_horario: bloqueHorario,
-      posicion: 1, // Esto se calculará automáticamente en el backend
+      posicion: 1, 
     })
       .then(() => {
         alert("Turno reservado exitosamente");

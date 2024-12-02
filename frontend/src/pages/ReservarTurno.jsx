@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom"; // Importa useNavigate
 import "../styles/ReservarTurno.css";
 
 const ReservarTurno = () => {
@@ -7,6 +8,8 @@ const ReservarTurno = () => {
   const [dia, setDia] = useState("");
   const [numeroTurno, setNumeroTurno] = useState(null);
   const [mostrarMensaje, setMostrarMensaje] = useState(false);
+
+  const navigate = useNavigate(); // Inicializa useNavigate
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -20,6 +23,7 @@ const ReservarTurno = () => {
     setProfesor("");
     setBloque("");
     setDia("");
+    navigate("/"); 
   };
 
   return (

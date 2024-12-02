@@ -9,16 +9,19 @@ import HorarioDocente from "./models/horarioDocenteModel.js";
 
 dotenv.config()
 const app = express();
-const port = 3000
+const port = 3005;
 
 app.use(express.json());
+
 app.use(cors({
-  origin: "*", 
-  methods: ['GET', 'POST', 'OPTIONS']
+  origin: "http://localhost:3000", //development mode, cambiar a posible hosteo
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS']
 }));
 
-app.get("/", (req, res) => {
-    res.send(" Turnero is working!");
-  });
+app.get("/", (_, res) => {
+  res.send(" Turnero is working!");
+});
 
-  
+app.listen(port, () => {
+  console.log("Turnero listening on port:", port); 
+}); 

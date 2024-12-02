@@ -8,7 +8,6 @@ const NavBar = () => {
     <nav className="navbar">
       <div className="navbar-logo-container">
         <img src={logo} alt="TIC Logo" className="navbar-logo" />
-
       </div>
       <ul className="navbar-links">
         <li><Link to="/">Inicio</Link></li>

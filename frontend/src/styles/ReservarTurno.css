@@ -4,8 +4,8 @@
     border-radius: 10px;
     align-items: center;
     min-height: 100vh;
-    background-color: #001f3f;
-    color: white;
+    background-color: #161853;
+    color: #FFFFFF;
     padding: 2rem;
   }
   
@@ -18,7 +18,7 @@
   
   .reservar-turno-card,
   .mensaje-exito-card {
-    background-color: white;
+    background-color: #FFFFFF;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding: 1.5rem;
@@ -28,7 +28,7 @@
   
   .nuevo-turno-title {
     font-size: 1.5rem;
-    color: #001f3f;
+    color: #161853;
     margin-bottom: 1rem;
   }
   
@@ -40,7 +40,7 @@
   
   .reservar-turno-form label {
     font-size: 0.9rem;
-    color: #001f3f;
+    color: #161853;
     text-align: left;
   }
   
@@ -52,8 +52,8 @@
   }
   
   .reservar-button {
-    background-color: #ff0077;
-    color: white;
+    background-color: #E61783;
+    color: #FFFFFF;
     padding: 0.75rem;
     font-size: 1rem;
     border: none;
@@ -63,29 +63,29 @@
   }
   
   .reservar-button:hover {
-    background-color: #e6006e;
+    background-color: #E61783;
   }
   
   .mensaje-exito-card {
     font-size: 1.2rem;
-    color: #001f3f;
+    color: #161853;
   }
   
   .numero-turno {
     font-size: 1rem;
-    color: #001f3f;
+    color: #161853;
     margin-top: 1rem;
   }
   
   .turno-numero {
     font-size: 3rem;
-    color: #ff0077;
+    color: #E61783;
     margin-bottom: 1rem;
   }
   
   .aceptar-button {
-    background-color: #ff0077;
-    color: white;
+    background-color: #E61783;
+    color: #FFFFFF;
     padding: 0.75rem;
     font-size: 1rem;
     border: none;
@@ -95,6 +95,6 @@
   }
   
   .aceptar-button:hover {
-    background-color: #e6006e;
+    background-color: #E61783;
   }
   

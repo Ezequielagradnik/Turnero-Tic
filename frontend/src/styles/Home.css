@@ -2,7 +2,7 @@
     margin-left: 220px;
     padding: 2rem;
     color: white;
-    background-color: #001f3f;
+    background-color: #161853;
     min-height: 100vh;
   }
   
@@ -14,11 +14,11 @@
   .home-subtitle {
     font-size: 1.5rem;
     margin-bottom: 1rem;
-    color: #ff0077;
+    color: #E61783;
   }
   
   .turnos-wrapper {
-    background-color: white;
+    background-color: #FFFFFF;
     border-radius: 12px;
     padding: 1.5rem;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
@@ -46,8 +46,8 @@
   }
   
   .turno-header {
-    background-color: #001f3f;
-    color: white;
+    background-color: #161853;
+    color: #FFFFFF;
     font-size: 1.2rem;
     font-weight: bold;
     text-align: center;
@@ -56,21 +56,21 @@
   
   .turno-body {
     text-align: center;
-    color: black;
+    color: #161853;
     padding: 1rem;
   }
   
   .turno-numero {
     font-size: 2.5rem;
     font-weight: bold;
-    color: #ff0077;
+    color: #E61783;
     margin-bottom: 0.5rem;
   }
   
   .turno-card.vacio {
     background-color: transparent;
-    border: 2px dashed #001f3f;
-    color: #001f3f;
+    border: 2px dashed #161853;
+    color: #161853;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -78,8 +78,8 @@
   }
   
   .nuevo-turno-button {
-    background-color: #ff0077;
-    color: white;
+    background-color: #E61783;
+    color: #FFFFFF;
     border: none;
     border-radius: 50%;
     width: 50px;
@@ -95,20 +95,20 @@
   }
   
   .nuevo-turno-button:hover {
-    background-color: #e6006e;
+    background-color: #E61783;
     transform: scale(1.1);
   }
   
   .nuevo-turno-text {
     font-size: 1.2rem;
     margin-bottom: 0.5rem;
-    color: white;
+    color: #FFFFFF;
     text-align: center;
   }
   
   .reservar-turno-button {
-    background-color: #ff0077;
-    color: white;
+    background-color: #E61783;
+    color: #FFFFFF;
     padding: 1rem 2rem;
     font-size: 1.2rem;
     border: none;
@@ -122,7 +122,7 @@
   }
   
   .reservar-turno-button:hover {
-    background-color: #e6006e;
+    background-color: #e61783;
         transform: scale(1.1);
 
   }

@@ -2,8 +2,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #001f3f;
-    color: white;
+    background-color: #161853;
+    color: #FFFFFF;
     height: 100vh;
     width: 200px;
     padding: 2rem 1rem;
@@ -49,7 +49,7 @@
   }
   
   .navbar-links a:hover {
-    color: #ff0077;
+    color: #E61783;
   }
   
   .navbar-links li:last-child {

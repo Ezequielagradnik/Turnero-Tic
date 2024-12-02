@@ -4,12 +4,13 @@ import "../styles/ReservarTurno.css";
 const ReservarTurno = () => {
   const [profesor, setProfesor] = useState("");
   const [bloque, setBloque] = useState("");
+  const [dia, setDia] = useState("");
   const [numeroTurno, setNumeroTurno] = useState(null);
   const [mostrarMensaje, setMostrarMensaje] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const turnoAsignado = Math.floor(Math.random() * 100) + 1; // Generar número de turno aleatorio
+    const turnoAsignado = Math.floor(Math.random() * 100) + 1; // Turno aleatorio
     setNumeroTurno(turnoAsignado);
     setMostrarMensaje(true);
   };
@@ -18,6 +19,7 @@ const ReservarTurno = () => {
     setMostrarMensaje(false);
     setProfesor("");
     setBloque("");
+    setDia("");
   };
 
   return (
@@ -27,7 +29,7 @@ const ReservarTurno = () => {
         <div className="mensaje-exito-card">
           <h2>Turno asignado con éxito.</h2>
           <p>Profesor: {profesor}</p>
-          <p>Día: Lunes 2/12</p>
+          <p>Día: {dia}</p>
           <p>Bloque: {bloque}</p>
           <h3 className="numero-turno">Número de turno:</h3>
           <h1 className="turno-numero">{numeroTurno}</h1>
@@ -52,6 +54,21 @@ const ReservarTurno = () => {
               </select>
             </label>
             <label>
+              Día:
+              <select
+                value={dia}
+                onChange={(e) => setDia(e.target.value)}
+                required
+              >
+                <option value="">--Seleccione día--</option>
+                <option value="Lunes">Lunes</option>
+                <option value="Martes">Martes</option>
+                <option value="Miércoles">Miércoles</option>
+                <option value="Jueves">Jueves</option>
+                <option value="Viernes">Viernes</option>
+              </select>
+            </label>
+            <label>
               Bloque:
               <select
                 value={bloque}
@@ -61,9 +78,9 @@ const ReservarTurno = () => {
                 <option value="">--Seleccione bloque--</option>
                 <option value="1° Bloque">1° Bloque</option>
                 <option value="2° Bloque">2° Bloque</option>
-                <option value="2° Bloque">3° Bloque</option>
-                <option value="2° Bloque">4° Bloque</option>
-                <option value="2° Bloque">5° Bloque</option>
+                <option value="3° Bloque">3° Bloque</option>
+                <option value="4° Bloque">4° Bloque</option>
+                <option value="5° Bloque">5° Bloque</option>
               </select>
             </label>
             <button type="submit" className="reservar-button">

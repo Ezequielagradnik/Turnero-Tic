@@ -10,13 +10,14 @@
   }
   
   .reservar-un-turno-title {
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: white;
     margin-bottom: 2rem;
     text-align: center;
   }
   
-  .reservar-turno-card, .mensaje-exito-card {
+  .reservar-turno-card,
+  .mensaje-exito-card {
     background-color: white;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -34,12 +35,13 @@
   .reservar-turno-form {
     display: flex;
     flex-direction: column;
-    gap: 2.0rem;
+    gap: 1.5rem;
   }
   
   .reservar-turno-form label {
     font-size: 0.9rem;
     color: #001f3f;
+    text-align: left;
   }
   
   .reservar-turno-form select {
@@ -65,14 +67,14 @@
   }
   
   .mensaje-exito-card {
-    font-size: 1.5rem;
-    color: #000000;
-    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    color: #001f3f;
   }
   
   .numero-turno {
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: #001f3f;
+    margin-top: 1rem;
   }
   
   .turno-numero {

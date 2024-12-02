@@ -2,6 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import "../styles/Home.css";
 
+
 const Home = () => {
   const navigate = useNavigate();
 
@@ -18,11 +19,12 @@ const Home = () => {
         <div className="turnos-container">
           {turnos.map((turno) => (
             <div key={turno.id} className="turno-card">
-              <div className="turno-header">{turno.docente}</div>
+              <div className="turno-header"><h1>{turno.docente}</h1></div>
               <div className="turno-body">
                 <h2 className="turno-numero">{turno.numero}</h2>
-                <p>{turno.fecha}</p>
+                <div><p>{turno.fecha}</p>
                 <p>{turno.bloque}</p>
+                </div>
               </div>
             </div>
           ))}

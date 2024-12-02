@@ -2,9 +2,9 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "../styles/NavBar.css";
 import logo from "../assets/tic-logo.png";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faThumbsUp } from '@fortawesome/free-solid-svg-icons';
-import { faCalendarPlus } from '@fortawesome/free-regular-svg-icons'; // Importar desde el paquete regular
+//import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+//import { faThumbsUp } from '@fortawesome/free-solid-svg-icons';
+//import { faCalendarPlus } from '@fortawesome/free-regular-svg-icons'; // Importar desde el paquete regular
 import calendario from "../assets/icon calendario.png"
 import home from "../assets/icon casa.png"
 

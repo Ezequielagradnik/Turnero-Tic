@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom"; // Importa useNavigate
+import { useNavigate } from "react-router-dom";
 import "../styles/ReservarTurno.css";
 
 const ReservarTurno = () => {
@@ -9,11 +9,11 @@ const ReservarTurno = () => {
   const [numeroTurno, setNumeroTurno] = useState(null);
   const [mostrarMensaje, setMostrarMensaje] = useState(false);
 
-  const navigate = useNavigate(); // Inicializa useNavigate
+  const navigate = useNavigate(); 
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const turnoAsignado = Math.floor(Math.random() * 100) + 1; // Turno aleatorio
+    const turnoAsignado = Math.floor(Math.random() * 100) + 1; 
     setNumeroTurno(turnoAsignado);
     setMostrarMensaje(true);
   };

@@ -1,7 +1,8 @@
 import Turno from './models/turnoModel';
+import { handleServerError } from '../helpers/handleError.js';
 
 
-export const GetTurnos = async (req, res) => {
+export const GetTurnos = async (_, res) => {
   try {
     const turnos = await Turno.findAll();
     res.status(200).json(turnos);
@@ -20,7 +21,7 @@ export const GetTurnobyalumno = async (req, res) => {
     }
     res.status(200).json(turnos);
   } catch (error) {
-    res.status(500).json({ message: 'Error al obtener los turnos del alumno', error: error.message });
+    handleServerError(error, res);
   }
 };
 

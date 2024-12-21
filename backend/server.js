@@ -5,7 +5,15 @@ import sequelize from "./config/db.js"
 import Docente from "./models/docenteModel.js";
 import Turno from "./models/turnoModel.js";
 import HorarioDocente from "./models/horarioDocenteModel.js";
+import './models/relations.model.js'
 
+
+try {
+  await sequelize.sync({ alter: true }); 
+  console.log("Base de datos sincronizada.");
+} catch (error) {
+  console.error("Error al sincronizar la base de datos:", error);
+}
 
 dotenv.config()
 const app = express();
@@ -14,7 +22,7 @@ const port = 3005;
 app.use(express.json());
 
 app.use(cors({
-  origin: "http://localhost:3000", //development mode, cambiar a posible hosteo
+  origin: "http://localhost:3000",
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS']
 }));
 

@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/static/css/main.cbc0a4c5.css",
+    "main.js": "/static/js/main.90b497d3.js",
+    "static/media/Horarioprofesor.png": "/static/media/Horarioprofesor.d381b40b06f81d2ec066.png",
+    "index.html": "/index.html",
+    "main.cbc0a4c5.css.map": "/static/css/main.cbc0a4c5.css.map",
+    "main.90b497d3.js.map": "/static/js/main.90b497d3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cbc0a4c5.css",
+    "static/js/main.90b497d3.js"
+  ]
+}

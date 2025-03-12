@@ -1,15 +1,14 @@
-import React from "react";
-import { useNavigate } from "react-router-dom";
-import "../styles/Home.css";
-
+"use client"
+import { useNavigate } from "react-router-dom"
+import "../styles/Home.css"
 
 const Home = () => {
-  const navigate = useNavigate();
+  const navigate = useNavigate()
 
   const turnos = [
     { id: 1, docente: "Chona Pardo", fecha: "Lunes 2/12", bloque: "1° Bloque", numero: 3 },
     { id: 2, docente: "Nacho Vigilante", fecha: "Jueves 5/12", bloque: "3° Bloque", numero: 15 },
-  ];
+  ]
 
   return (
     <div className="home-container">
@@ -19,11 +18,14 @@ const Home = () => {
         <div className="turnos-container">
           {turnos.map((turno) => (
             <div key={turno.id} className="turno-card">
-              <div className="turno-header"><h1>{turno.docente}</h1></div>
+              <div className="turno-header">
+                <h1>{turno.docente}</h1>
+              </div>
               <div className="turno-body">
                 <h2 className="turno-numero">{turno.numero}</h2>
-                <div><p>{turno.fecha}</p>
-                <p>{turno.bloque}</p>
+                <div className="turno-details">
+                  <p>{turno.fecha}</p>
+                  <p>{turno.bloque}</p>
                 </div>
               </div>
             </div>
@@ -41,7 +43,8 @@ const Home = () => {
         Reservar turno
       </button>
     </div>
-  );
-};
+  )
+}
 
-export default Home;
+export default Home
+
